@@ -2,7 +2,8 @@ NAME := fractal
 CC := c++
 FLAGS := -Wall -Wextra -Werror
 SDL_FLAGS := $(shell sdl2-config --cflags --libs)
-SRCS := main.cpp
+SRCS := main.cpp \
+		fractal_calc.cpp
 OBJS := ${SRCS:.cpp=.o}
 
 .cpp.o:
